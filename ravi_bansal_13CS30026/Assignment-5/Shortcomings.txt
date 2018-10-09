@@ -1,0 +1,7 @@
+There is no type checking of function parameters
+There are lot of unnecessary goto's and temporary vairables.like for initialization.
+There is a limited number of temporary variables.
+complex pointer handling is not done
+typechecking is done only for limited cases
+optimization can be improved
+

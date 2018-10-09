@@ -1,0 +1,93 @@
+Grammar
+
+    0 $accept: statement $end
+
+    1 statement: %empty
+    2          | KEYWORD
+    3          | IDENTIFIER
+    4          | CONSTANT
+    5          | STRING_LITERAL
+    6          | PUNCTUATOR
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+KEYWORD (258) 2
+IDENTIFIER (259) 3
+CONSTANT (260) 4
+STRING_LITERAL (261) 5
+PUNCTUATOR (262) 6
+
+
+Nonterminals, with rules where they appear
+
+$accept (8)
+    on left: 0
+statement (9)
+    on left: 1 2 3 4 5 6, on right: 0
+
+
+State 0
+
+    0 $accept: . statement $end
+
+    KEYWORD         shift, and go to state 1
+    IDENTIFIER      shift, and go to state 2
+    CONSTANT        shift, and go to state 3
+    STRING_LITERAL  shift, and go to state 4
+    PUNCTUATOR      shift, and go to state 5
+
+    $default  reduce using rule 1 (statement)
+
+    statement  go to state 6
+
+
+State 1
+
+    2 statement: KEYWORD .
+
+    $default  reduce using rule 2 (statement)
+
+
+State 2
+
+    3 statement: IDENTIFIER .
+
+    $default  reduce using rule 3 (statement)
+
+
+State 3
+
+    4 statement: CONSTANT .
+
+    $default  reduce using rule 4 (statement)
+
+
+State 4
+
+    5 statement: STRING_LITERAL .
+
+    $default  reduce using rule 5 (statement)
+
+
+State 5
+
+    6 statement: PUNCTUATOR .
+
+    $default  reduce using rule 6 (statement)
+
+
+State 6
+
+    0 $accept: statement . $end
+
+    $end  shift, and go to state 7
+
+
+State 7
+
+    0 $accept: statement $end .
+
+    $default  accept

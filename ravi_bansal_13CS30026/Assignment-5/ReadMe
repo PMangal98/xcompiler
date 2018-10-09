@@ -1,0 +1,17 @@
+Assignment - 5: Machine Independent Code Generator for tinyC
+
+Marking Scheme
+-----------------
+
+
+1. Design of Grammar Augmentations (Explain the augmentations in the production rules in Bison): 5
+2. Design of Attributes (Explain the attributes in the respective %token and %type in Bison): 5
+3. Design and Implementation of Symbol Table & Supporting Data Structures (Explain with class definition of ST & other Data Structures): 10
+4. Design and Implementation of Quad Array (Explain with class definition of QA): 5
+5. Design and Implementation of Global Functions (Explain i/p, o/p, algorithm & purpose for every function): 10
+6. Design and Implementation of Semantic Actions (Explain with every action in Bison):
+6a. Expression Phase (Correct handling of operators, type checking & conversions): 15
+6b. Declaration Phase (Handling of variable declarations, function definitions in ST): 10
+6c. Statement Phase (Correct handling of statements): 15
+6d. External Definition Phase (Correct handling of function definitions): 5
+7. Design of Test files and correctness of outputs (Test at least 5 i/p files covering all rules Shortcoming and / or bugs, if any, should be highlighted): 20
