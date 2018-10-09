@@ -1,7 +1,7 @@
 %{
     #include "ass5_14CS10003_translator.h"
     void yyerror(const char*);
-    extern int yylex(void);
+    //extern int yylex(void);
     using namespace std;
 %}
 
