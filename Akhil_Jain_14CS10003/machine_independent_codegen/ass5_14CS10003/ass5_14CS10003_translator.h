@@ -11,7 +11,7 @@ extern int size_double;
 extern int size_pointer;
 extern int size_char;
 extern int size_bool;
-
+extern "C" int yylex();
 class type_n;// to store a type and its list
 class expresn;// to be used for truelist,falselist and nextlist
 class quad; //to define quad so that we can further use it to make array
