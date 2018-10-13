@@ -1,0 +1,134 @@
+=============================================================================
+Generated Quads for the program
+  0. :t000	=	3
+  1. :b	=	t000
+  2. :t001	=	7
+  3. :t002	=	b + t001
+  4. :a	=	t002
+  5. :t003	=	t002
+  6. :t004	=	2
+  7. :t005	=	b - t004
+  8. :a	=	t005
+  9. :t006	=	t005
+ 10. :t007	=	1
+ 11. :t008	=	b * t007
+ 12. :a	=	t008
+ 13. :t009	=	t008
+ 14. :t010	=	2
+ 15. :t011	=	b / t010
+ 16. :a	=	t011
+ 17. :t012	=	t011
+ 18. :t013	=	a % b
+ 19. :b	=	t013
+ 20. :t014	=	t013
+ 21. :t015	=	8.900000
+ 22. :db2	=	t015
+ 23. :t016	=	2.000000
+ 24. :t017	=	t016 + db2
+ 25. :db1	=	t017
+ 26. :t018	=	t017
+ 27. :t019	=	1.000000
+ 28. :t020	=	db2 - t019
+ 29. :db1	=	t020
+ 30. :t021	=	t020
+ 31. :t022	=	8.000000
+ 32. :t023	=	db2 * t022
+ 33. :db1	=	t023
+ 34. :t024	=	t023
+ 35. :t025	=	20.000000
+ 36. :t026	=	db2 / t025
+ 37. :db1	=	t026
+ 38. :t027	=	t026
+ 39. :t028	=	& a
+ 40. :p	=	t028
+ 41. :t029	=	* p
+ 42. :if  t029 ==a	goto 45
+ 43. :goto 50
+ 44. :goto 55
+ 45. :t030	=	2
+ 46. :t031	=	a * t030
+ 47. :b	=	t031
+ 48. :t032	=	t031
+ 49. :goto 55
+ 50. :t033	=	3
+ 51. :t034	=	a * t033
+ 52. :b	=	t034
+ 53. :t035	=	t034
+ 54. :goto 55
+ 55. :t036	=	2
+ 56. :t037	=	b << t036
+ 57. :leftsh	=	t037
+ 58. :t038	=	a
+ 59. :a	=	a + 1
+ 60. :t039	=	2
+ 61. :a	=	t039
+ 62. :t040	=	t039
+ 63. :t041	=	3
+ 64. :b	=	t041
+ 65. :t042	=	t041
+=============================================================================
+Symbol table Maintained For the Given Program
+
+=============================================================================
+Symbol Table : Global
+Name	Value	var_type	size	Offset	Type
+main	null	func	0	-1	ptr-to-St( main )Int
+
+=============================================================================
+
+=============================================================================
+Symbol Table : main
+Name	Value	var_type	size	Offset	Type
+retVal	null	return	4	0	Int
+a	null	local	4	4	Int
+b	null	local	4	8	Int
+t000	3	temp	4	-1	Int
+t001	7	temp	4	-1	Int
+t002	null	temp	4	-1	Int
+t003	null	temp	4	-1	Int
+t004	2	temp	4	-1	Int
+t005	null	temp	4	-1	Int
+t006	null	temp	4	-1	Int
+t007	1	temp	4	-1	Int
+t008	null	temp	4	-1	Int
+t009	null	temp	4	-1	Int
+t010	2	temp	4	-1	Int
+t011	null	temp	4	-1	Int
+t012	null	temp	4	-1	Int
+t013	null	temp	4	-1	Int
+t014	null	temp	4	-1	Int
+db1	null	local	8	72	Double
+db2	null	local	8	80	Double
+t015	8.900000	temp	8	-1	Double
+t016	2.000000	temp	8	-1	Double
+t017	null	temp	8	-1	Double
+t018	null	temp	8	-1	Double
+t019	1.000000	temp	8	-1	Double
+t020	null	temp	8	-1	Double
+t021	null	temp	8	-1	Double
+t022	8.000000	temp	8	-1	Double
+t023	null	temp	8	-1	Double
+t024	null	temp	8	-1	Double
+t025	20.000000	temp	8	-1	Double
+t026	null	temp	8	-1	Double
+t027	null	temp	8	-1	Double
+p	null	local	4	192	ptr(Int)
+t028	null	temp	4	-1	ptr(Int)
+t029	null	temp	4	-1	Int
+t030	2	temp	4	-1	Int
+t031	null	temp	4	-1	Int
+t032	null	temp	4	-1	Int
+t033	3	temp	4	-1	Int
+t034	null	temp	4	-1	Int
+t035	null	temp	4	-1	Int
+leftsh	null	local	4	228	Int
+t036	2	temp	4	-1	Int
+t037	null	temp	4	-1	Int
+t038	null	temp	4	-1	Int
+t039	2	temp	4	-1	Int
+t040	null	temp	4	-1	Int
+t041	3	temp	4	-1	Int
+t042	null	temp	4	-1	Int
+
+=============================================================================
+=============================================================================
